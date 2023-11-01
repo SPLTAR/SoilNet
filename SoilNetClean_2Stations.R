@@ -9,7 +9,7 @@ library(tidyverse)
 library(lubridate)
 library(dplyr, warn.conflicts = FALSE)
 
-# Fix Date/Time
+# Fix Date/Time format
 df1$TIMESTAMP = mdy_hm(df1$TIMESTAMP, tz = "America/Chicago")
 
 df2 <- data.frame(DateTime = df1$TIMESTAMP,
