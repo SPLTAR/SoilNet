@@ -7,3 +7,15 @@ By: Stephen Teet
   * SoilNetClean.R processes data from the standard P13 soil sensor stations.
   * SoilNetClean_2Stations.R processes data form the P13 soil sensor stations that have two sets of sensors attached, i.e. represent two stations.
   * SoilNetCleanWRE.R (will) process data from the WRE soil sensor stations.
+
+## Directions for use:
+In order to be able to use the R codes to process the SoilNet data, the following steps must be followed.
+* Copy your downloaded .dat file and change the copy to a .csv.  You will get a warning about possibly losing file functionality, just ignore this.
+* Open you new .csv file with Excel, and delete the excess header rows (1, 3, and 4) so that only the variable name is left.
+* Save the file and exit Excel.
+* Open the appropriate R code file in RStudio, making sure that your files are in the same directory.
+* Edit the file in the first line of code:
+  '''
+  df1 <- read.csv('TOA5_75527.Cosmos_P13_Station21.csv')
+  '''
+  
