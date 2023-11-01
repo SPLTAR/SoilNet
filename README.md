@@ -13,7 +13,7 @@ In order to be able to use the R codes to process the SoilNet data, the followin
 * Copy your downloaded .dat file and change the copy to a .csv.  You will get a warning about possibly losing file functionality, just ignore this.
 * Open you new .csv file with Excel, and delete the excess header rows (1, 3, and 4) so that only the variable name is left.
 * Save the file and exit Excel.
-* Open the appropriate R code file in RStudio, making sure that your files are in the same directory.
+* Open the appropriate R code file in RStudio, making sure that your files are in the same directory.  You must have the lubridate, tidyverse, and dplyr packages installed.
 * Edit the file name in the first line of code:
         ```
         df1 <- read.csv('TOA5_75527.Cosmos_P13_Station21.csv')
