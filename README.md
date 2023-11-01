@@ -15,11 +15,11 @@ In order to be able to use the R codes to process the SoilNet data, the followin
 * Save the file and exit Excel.
 * Open the appropriate R code file in RStudio, making sure that your files are in the same directory.
 * Edit the file name in the first line of code:
-**        ```
+        ```
         df1 <- read.csv('TOA5_75527.Cosmos_P13_Station21.csv')
         ```
 * Also edit the file name in the write command near the end of the code:
-**        ```
+        ```
         write.csv(df3, "P13_Station21_31102023.csv", row.names = FALSE)
         ```
 * Rune the code.
